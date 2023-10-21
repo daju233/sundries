@@ -1,3 +1,35 @@
 body{
-    background-color: tomato;
+    
+    height: 400px;
+}
+
+button
+{
+    display: block;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+    font-size: 60px;
+    font-style: italic;
+}
+#animate
+{
+
+}
+#comic
+{
+
+}
+#game
+{
+
+}
+#BBS
+{
+
+}
+#book
+{
+
 }
