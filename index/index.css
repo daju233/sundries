@@ -1,35 +1,58 @@
 body{
-    
+background-image: url("../images/alice.jpeg");
     height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
-button
+#xiaoren
 {
-    display: block;
-    width: 40%;
-    height: 60%;
-    margin: auto;
-    margin-bottom: 10%;
-    font-size: 60px;
-    font-style: italic;
+    width: 200px;
+    border-radius: 100%;
+    margin-left: 43%;
+    margin-top: 10%;
 }
-#animate
+
+#main-footer
+{
+    color:whitesmoke;
+    margin-top: 10%;
+    margin-left: 40%;
+}
+
+#navbar
+nav{
+margin-top: 5%;
+margin-left: 30%;
+margin-bottom: 3%;
+}
+
+a{
+    color:snow;
+}
+
+li
+{
+    color: snow;
+    display:inline;
+    margin-left: 5%;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+#about
 {
 
+    margin-left: 46.5%;
 }
-#comic
-{
 
-}
-#game
-{
-
-}
-#BBS
-{
-
-}
-#book
-{
-
-}
+@keyframes grow {
+    from {
+      transform: scale(1);
+    }
+  
+    to {
+      transform: scale(1.2);
+    }
+  }
