@@ -1,0 +1,30 @@
+body{
+background-image: url("../images/alice.jpeg");
+    height: 20vw;
+    width: 180vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+section
+{
+    text-align: center;
+    background-color: rgba(128, 128, 128,0.5);
+    height: 3vh;
+    font-size: 150%;
+}
+
+.introduction
+{
+    margin-left: 2vw;
+    margin-top: 5vh;
+    width: 10vw;
+    height: 40vh;
+}
+
+img
+{
+    width: 10vw;
+    height: 40vh;
+}

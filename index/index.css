@@ -1,17 +1,18 @@
 body{
 background-image: url("../images/alice.jpeg");
-    height: 400px;
+background-size: 100vw 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
+       
     
 }
 
 #xiaoren
 {
-    width: 200px;
-    border-radius: 100%;
-    margin-left: 43%;
-    margin-top: 10%;
+    width: 12.5vw;
+    height:25vh;
+    border-radius: 200%;
+    rotate: 0deg;
+    animation: rotate 20s linear backwards infinite;
 }
 
 #main-footer
@@ -47,12 +48,14 @@ li
     margin-left: 46.5%;
 }
 
-@keyframes grow {
-    from {
-      transform: scale(1);
+@keyframes rotate {
+
+    from{
+        transform: rotate(0deg);
     }
-  
-    to {
-      transform: scale(1.2);
+
+    to{
+        transform: rotate(360deg);
     }
-  }
+    
+}
