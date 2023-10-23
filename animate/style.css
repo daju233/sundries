@@ -13,12 +13,14 @@ font-size: 1em;
 #container
 {
     display: grid;
-    grid-template-columns: repeat(auto-fill,20%);
+    grid-template-columns: repeat(auto-fill,33%);
     column-gap: 2vw;
     row-gap:3vh;
     font-size: larger;
     font-style: oblique;
     text-align: center;
+    color:aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #container>div>img{
     width: 100%;
