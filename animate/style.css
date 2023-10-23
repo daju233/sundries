@@ -13,7 +13,7 @@ font-size: 1em;
 #container
 {
     display: grid;
-    grid-template-columns: repeat(auto-fill,9vw);
+    grid-template-columns: repeat(auto-fill,5vw);
     column-gap: 2vw;
     row-gap:3vh;
     font-size: larger;
