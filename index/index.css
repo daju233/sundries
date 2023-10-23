@@ -8,9 +8,9 @@ background-size: 100vw 100vh;
 
 #xiaoren
 {
-    width: 12.5vw;
-    height:25vh;
-    border-radius: 200%;
+    width: 150px;
+    height:150px;
+    border-radius: 100%;
     animation: rotate 20s linear backwards infinite;
 }
 
