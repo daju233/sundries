@@ -2,7 +2,6 @@ body{
 background-image: url("../images/alice.jpeg");
 width: 90%;
 background-size: cover;
-max-width: 900px;
 font-size: 1em;
 }
 
@@ -14,8 +13,7 @@ font-size: 1em;
 #container
 {
     display: grid;
-    grid-template-columns: repeat(8,9vw);
-    grid-template-rows: repeat(3,31vh);
+    grid-template-columns: repeat(auto-fill,200px);
     column-gap: 3vw;
     row-gap:3vh;
     font-size: larger;
@@ -23,7 +21,7 @@ font-size: 1em;
     text-align: center;
 }
 #container>div>img{
-    width: 8.8vw;
+    width: 100%;
     height: 27vh;
     border-radius: 5%;
 }
