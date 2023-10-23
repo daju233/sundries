@@ -7,6 +7,7 @@ function jsonp(req) {
 }//加入一条script标签
 
 function getsteam(res){
+    //console.log("woxihuanni");
     console(res);
 }//回调函数
 

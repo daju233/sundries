@@ -1,30 +1,29 @@
 body{
 background-image: url("../images/alice.jpeg");
-    height: 20vw;
-    width: 180vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+width: 90%;
+background-size: cover;
+max-width: 900px;
+font-size: 1em;
 }
 
-section
+#container>div
 {
+    background-color: rgba(5, 248, 212,0.5);
+    border: 2px solid rgba(0, 142, 244, 0.379);
+    border-radius: 5px;}
+#container
+{
+    display: grid;
+    grid-template-columns: repeat(8,9vw);
+    grid-template-rows: repeat(3,31vh);
+    column-gap: 3vw;
+    row-gap:3vh;
+    font-size: larger;
+    font-style: oblique;
     text-align: center;
-    background-color: rgba(128, 128, 128,0.5);
-    height: 3vh;
-    font-size: 150%;
 }
-
-.introduction
-{
-    margin-left: 2vw;
-    margin-top: 5vh;
-    width: 12vw;
-    height: 40vh;
-}
-
-img
-{
-    width: 12vw;
-    height: 40vh;
+#container>div>img{
+    width: 8.8vw;
+    height: 27vh;
+    border-radius: 5%;
 }
