@@ -1,8 +1,15 @@
-async function getsteam()
-{
-    const data = await get('https://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=59808D845F65E0DA823A66B9BED4CC25&steamid=76561197960434622&format=json');
-    const mydata= await data.json();
-    console.log(mydata);
+function jsonp(req) {
+    var script = document.createElement('script');
+    var url = req.url + '&callback=' + req.callback.name;
+    script.src = url;
+    document.getElementsByTagName('head')[0].appendChild(script);
 }
 
-getsteam();
+function getsteam(res){
+    console(res.data);
+}
+
+jsonp({
+    url : 'https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=59808D845F65E0DA823A66B9BED4CC25&steamid=76561197960434622&format=json',
+    callback : getsteam
+});
