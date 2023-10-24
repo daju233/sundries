@@ -9,7 +9,9 @@ background-size: 100vw 100vh;
 
 #xiaoren
 {
-    transform:translate(33vw,-1vh);
+    animation: rotate 11s linear forwards infinite;
+    animation-play-state:paused;
+    margin-left: 33vw;
     position: absolute;
     height: 17%;
     width: auto;
@@ -106,3 +108,12 @@ p
     font-size: 16px;
     color:whitesmoke;
 }
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }

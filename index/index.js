@@ -10,3 +10,18 @@ const ap = new APlayer({
     }]
 });
 
+let aplayer = document.getElementById('aplayer');
+let xiaoren = document.getElementById('xiaoren');
+aplayer.addEventListener('click',()=>{
+    if(ap.audio.paused===false) 
+    {
+        
+        xiaoren.style.animationPlayState="running";
+        console.log('1'+ap.audio.paused);
+    }
+    else if(ap.audio.paused===true)
+    {
+        xiaoren.style.animationPlayState="paused";
+    }
+
+})
