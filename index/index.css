@@ -12,6 +12,7 @@ background-size: 100vw 100vh;
     animation: rotate 11s linear forwards infinite;
     animation-play-state:paused;
     margin-left: 33vw;
+    margin-top: 2vh;
     position: absolute;
     height: 17%;
     width: auto;
