@@ -6,55 +6,103 @@ background-size: 100vw 100vh;
     
 }
 
+
 #xiaoren
 {
-    width: 150px;
-    height:150px;
-    border-radius: 100%;
-    animation: rotate 20s linear backwards infinite;
+    transform:translate(33vw,-1vh);
+    position: absolute;
+    height: 17%;
+    width: auto;
+    border-radius: 50%;
 }
 
-#main-footer
+#aplayer
 {
-    color:whitesmoke;
-    margin-top: 10%;
-    margin-left: 40%;
+    position: absolute;
+    transform:translate(0vw,19vh);
+    width: 92vw;
 }
 
-#navbar
-nav{
-margin-top: 5%;
-margin-left: 30%;
-margin-bottom: 3%;
+.container
+{   
+    text-align: center;
+    transform: translate(2%,72%);
+    display: flex;
+    column-gap: 5vw;
+    width:90vw;
+    height: 55vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* border-style: dotted; */
+    color: white;
+    
+}
+
+#link1{
+    background-image: url(../images/test.jpg);
+    background-size: cover;
+    text-align: center;
+    width: 40vw;
+    height: 15vh;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+#link2{
+    background-image: url(../images/test.jpg);
+    background-size: cover;
+    text-align: center;
+    width: 40vw;
+    height: 15vh;
+    background-color: rgb(127, 255, 212,0.5);
+    border-radius: 10%;
+}
+
+#link3
+{
+    background-image: url(../images/test.jpg);
+    background-size: cover;
+    text-align: center;
+    width: 40vw;
+    height: 15vh;
+    background-color: rgb(127, 255, 212,0.5);
+    border-radius: 10%;
+}
+
+#link4{
+    background-image: url(../images/test.jpg);
+    background-size: cover;
+    text-align: center;
+    width: 40vw;
+    height: 15vh;
+    background-color: rgb(127, 255, 212,0.5);
+    border-radius: 10%;
 }
 
 a{
-    color:snow;
+    display: block;
+    width: 95%;
+    height: 15vh;
+    /* border-style: dotted; */
+    border-radius: 20%;
+    text-decoration: none;
 }
 
-li
-{
-    color: snow;
-    display:inline;
-    margin-left: 5%;
-    font-size: larger;
-    text-decoration: underline;
+p
+{   
+    color: #fff;
+    font-weight: 1000;
+    font-size: 5vh;
+    font-style: italic;
+    transform: translate(0.3vw,-0.6vh);
 }
-
-#about
-{
-
-    margin-left: 46.5%;
-}
-
-@keyframes rotate {
-
-    from{
-        transform: rotate(0deg);
-    }
-
-    to{
-        transform: rotate(360deg);
-    }
-    
+#main-footer
+p
+{   position:absolute;
+    transform: translate(-3vw,30vh);
+    width: 100vw;
+    text-align: center;
+    font-weight: 60;
+    font-size: 16px;
+    color:whitesmoke;
 }
