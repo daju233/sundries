@@ -1,6 +1,6 @@
 body{
 background-image: url("../images/alice.jpeg");
-width: 90%;
+width: 100%;
 background-size: cover;
 font-size: 1em;
 }
@@ -13,8 +13,9 @@ font-size: 1em;
 #container
 {
     display: grid;
-    grid-template-columns: repeat(auto-fill,33%);
-    column-gap: 2vw;
+    grid-template-columns: repeat(auto-fill,40%);
+    margin-left: 13vw;
+    column-gap: 20px;
     row-gap:3vh;
     font-size: larger;
     font-style: oblique;
