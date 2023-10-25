@@ -1,5 +1,4 @@
 import gamedata from './response.json' assert {type:'json'};
-//import * as echarts from './echarts';
 
 const gamearray=gamedata.response.games;
 
@@ -17,15 +16,45 @@ const gamearray=gamedata.response.games;
 }*/
 //为什么排序不成功???
 
+
 gamearray.sort((a, b) => (a.playtime_forever > b.playtime_forever) ? -1 : 1);
+const gametimes = new Array();
+const gamenames = new Array();
 
 for(var i in gamearray)
 {
-    if(gamearray[i].playtime_forever>=100)
+    if(gamearray[i].playtime_forever>=800)
     {
-        var p =document.createElement("section")
-            var text = document.createTextNode(gamearray[i].name+' : '+(gamearray[i].playtime_forever/60).toFixed(1)+'h')
-            p.appendChild(text)
-            document.body.appendChild(p)
+        gamenames[i]=gamearray[i].name;
+        gametimes[i]=(gamearray[i].playtime_forever/60).toFixed(1);
     }
 }
+console.log(gametimes);
+
+ // 基于准备好的dom，初始化echarts实例
+ var myChart = echarts.init(document.getElementById('main'));
+
+ // 指定图表的配置项和数据
+ var option = {
+   title: {
+     text: 'Steam游戏库数据'
+   },
+   tooltip: {},
+   legend: {
+     data: ['游戏时长']
+   },
+   yAxis: {
+     data:gamenames
+   },
+   xAxis: {},
+   series: [
+     {
+       name: '游戏时长',
+       type: 'bar',
+       data:gametimes
+     }
+   ]
+ };
+
+ // 使用刚指定的配置项和数据显示图表。
+ myChart.setOption(option);
