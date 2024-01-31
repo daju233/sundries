@@ -1,7 +1,7 @@
 "use strict";
 
 const fuckyou = function () {
-  alert("There's nothing here!a");
+  alert("There's nothing here!");
 };
 const button = document.querySelectorAll(".button");
 
