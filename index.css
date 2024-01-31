@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  color: lightblue;
+  background-image: url(./download.jpeg);
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  color: lightblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav1 {
+  display: flex;
+  align-items: center;
+}
+
+.other {
+  /* margin-top: 3vw; */
+  padding: 0;
+  display: flex;
+}
+
+.card {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-left: auto;
+  margin-right: auto;
+  width: 25vw;
+  height: 48vw;
+  animation: apperance 3s;
+}
+
+.button-container {
+  display: flex;
+  align-self: flex-end;
+  gap: 6px;
+}
+
+.all-container {
+  margin-top: 1.5vh;
+  display: flex;
+  /* background-color: antiquewhite; */
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-left: none;
+  border-right: none;
+  height: 46vw;
+  flex-flow: row wrap;
+}
+
+.myintro {
+  /* background-color: antiquewhite; */
+  align-self: flex-start;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.all-intro {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+
+.intro {
+  /* background-color: antiquewhite; */
+  color: lightblue;
+  padding: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.touxiangcontainer {
+  /* align-self: flex-start;
+  align-items: center; */
+}
+
+.touxiang {
+  width: 11vw;
+  height: 20vh;
+  border-radius: 50%;
+}
+
+.logo:hover {
+  color: rgb(250, 250, 250);
+  cursor: pointer;
+}
+
+.intro:hover {
+  background-color: gray;
+}
+
+.button {
+  width: 5vw;
+  height: 5vh;
+  cursor: pointer;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 7px;
+  border-width: 1px;
+  border-color: black;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.button:hover {
+  background-color: gray;
+}
+
+.message {
+  color: white;
+}
+
+@keyframes apperance {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
