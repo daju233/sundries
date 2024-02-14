@@ -1,149 +1,56 @@
-* {
-  margin: 0;
-  font-size: 20px;
-}
-
 body {
-  display: none;
-  flex-flow: column;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  color: lightblue;
-  background-image: url(./download.jpeg);
-  align-items: center;
-  height: 100vh;
+  animation: turnred 1s ease-out 20s 1 forwards;
 }
 
-a {
-  text-decoration: none;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 30px;
-  color: lightblue;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-style: italic;
-}
-
-.hidden {
-  display: none;
-}
-
-.nav1 {
+.container {
   display: flex;
-  align-items: center;
-  flex: 0 0 auto;
-  width: 100vw;
+  justify-content: center;
+  border-bottom: 2px solid;
+  border-color: rgb(125, 132, 150);
+  margin-bottom: 0;
+}
+.nginx {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin: 0;
+}
+p {
+  font-size: 25px;
+  margin: 0;
+}
+h1 {
+  font-size: 50px;
 }
 
-.other {
-  padding: 0;
-  display: flex;
-  flex: 1 0 auto;
-  align-items: center;
-}
-
-.card {
-  display: flex;
+h2 {
   color: black;
-  background-color: rgba(255, 255, 255, 0.6);
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
-  width: 25vw;
-  height: 85vh;
-  animation: apperance 3s;
+  animation: fadeout 1s ease-out 20s 1 forwards;
+  opacity: 0;
 }
 
-.button-container {
-  display: flex;
-  align-self: flex-end;
-  gap: 6px;
-}
-
-.all-container {
-  display: flex;
-  /* background-color: antiquewhite; */
-  align-items: center;
-  justify-content: center;
-  border: solid;
-  border-left: none;
-  border-right: none;
-  height: 80vh;
-  flex-flow: row wrap;
-}
-
-.myintro {
-  /* background-color: antiquewhite; */
-  align-self: flex-start;
-  text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-.all-intro {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-left: auto;
-}
-
-.intro {
-  /* background-color: antiquewhite; */
-  color: lightblue;
-  padding: 1vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  flex: 0 0 auto;
-}
-
-.touxiangcontainer {
-  /* align-self: flex-start;
-  align-items: center; */
-}
-.logo:hover {
-  color: rgb(250, 250, 250);
-  cursor: pointer;
-}
-
-.intro:hover {
-  background-color: gray;
-}
-
-.button {
-  width: 5vw;
-  height: 5vh;
-  cursor: pointer;
-  border-style: solid;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 7px;
-  border-width: 1px;
-  border-color: black;
-  padding: 5px;
-  margin-bottom: 5px;
-}
-
-.button:hover {
-  background-color: gray;
-}
-
-.message {
-  color: white;
-}
-
-@keyframes apperance {
+@keyframes fadeout {
   from {
     opacity: 0;
+    font-size: 20px;
   }
-
   to {
     opacity: 1;
+    font-size: 80px;
   }
+}
+
+@keyframes turnred {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: rgb(129, 4, 4);
+  }
+}
+.key {
+  display: none;
+}
+img {
+  display: none;
 }
